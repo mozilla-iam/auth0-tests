@@ -47,4 +47,6 @@ class TestAccount:
         invalid_email = "invalidmail"
         auth0.enter_email(invalid_email)
         auth0.click_send_email()
-        assert auth0.passwordless_login_confirmation_message == 'We were unable to send the email : error in email - email format validation failed: {0}'.format(invalid_email)
+        error_login_confirmation_message = 'We were unable to send the email : error in email - email format validation failed: {0}'\
+            .format(invalid_email)
+        assert error_login_confirmation_message == auth0.passwordless_login_confirmation_message
