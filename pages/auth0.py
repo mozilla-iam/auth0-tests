@@ -51,9 +51,9 @@ class Auth0(Base):
         self.selenium.find_element(*self._ldap_password_field_locator).send_keys(ldap_password)
 
     def delete_ldap_email(self):
-        email_address = self.selenium.find_element(*self._ldap_email_field_locator).get_attribute('value')
-        for item in email_address:
-            self.selenium.find_element(*self._ldap_email_field_locator).send_keys(Keys.BACKSPACE)
+        ldap_input_field = self.selenium.find_element(*self._ldap_email_field_locator)
+        while ldap_input_field.get_attribute('value') != '':
+            ldap_input_field.send_keys(Keys.BACKSPACE)
 
     def delete_ldap_password(self):
         self.selenium.find_element(*self._ldap_password_field_locator).clear()
