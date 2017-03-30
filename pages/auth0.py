@@ -52,7 +52,7 @@ class Auth0(Base):
 
     def delete_ldap_email(self):
         ldap_input_field = self.selenium.find_element(*self._ldap_email_field_locator)
-        while ldap_input_field.get_attribute('value') != '':
+        while ldap_input_field.get_attribute('value'):
             ldap_input_field.send_keys(Keys.BACKSPACE)
 
     def delete_ldap_password(self):
