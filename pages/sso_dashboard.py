@@ -35,5 +35,4 @@ class SsoDashboard(Base):
         self.selenium.switch_to.window(self.selenium.window_handles[1])
         auth = Auth0(self.base_url, self.selenium)
         auth.wait_for_message(message)
-        auth.wait_for_spinner()
         return Discourse(self.base_url, self.selenium)
