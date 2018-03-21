@@ -16,7 +16,7 @@ class Auth0(Base):
     _ldap_error_message = (By.CSS_SELECTOR, '#error-password span')
     _passwordless_login_confirmation_message = (By.CSS_SELECTOR, '#error-message-passwordless span')
     _loading_spinner_locator = (By.CSS_SELECTOR, 'form[lock-state="loading"]')
-    _spinner_locator = (By.CSS_SELECTOR, 'form[lock-state="loading"]')
+    _spinner_locator = (By.CSS_SELECTOR, '.loading__spinner')
     _autologin_message_locator = (By.ID, 'loading__status')
 
     # Github locators
