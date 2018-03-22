@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Preparing to run the automated tests...
+      - apt-get update -y
+      - pip install tox
+      - apt-get install firefox xvfb -y
+      - Xvfb :10 -ac &
+      - export DISPLAY=:10
+  build:
+    commands:
+      - echo Running the tests now...
+      - tox
+  post_build:
+    commands:
+      - echo Testing complete...
