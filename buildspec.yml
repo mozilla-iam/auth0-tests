@@ -13,6 +13,7 @@ phases:
       - tar -xvzf geckodriver-v0.20.0-linux64.tar.gz
       - chmod +x geckodriver
       - cp geckodriver /usr/local/bin/
+      - python params2json.py > variables.json
   build:
     commands:
       - echo Running the tests now...
