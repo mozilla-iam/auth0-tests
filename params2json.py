@@ -33,9 +33,15 @@ def dump_secrets():
         "google": {
           "email": 'test.parsys@gmail.com',
           "password": get_secret('/iam/automated-test/test.parsys_at_gmail.com')
+        },
+        "fxa": {
+            "email": 'moz.parsys@gmail.com',
+            "password": get_secret('/iam/automated-test/moz.parsys_at_gmail.com'),
+            "secret_seed": get_secret('/iam/automated-test/moz.parsys_at_gmail.com_seed')
         }
       }
     }
+
     return secrets
 
 if __name__ == "__main__":
