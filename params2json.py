@@ -20,7 +20,7 @@ def dump_secrets():
         "ldap": {
           "email": 'iam_test@mozilla.com',
           "password": get_secret('/iam/automated-test/iam_test_at_mozilla.com'),
-          "secret" : get_secret('/iam/automated-test/iam_test_at_mozilla.com_seed')
+          "secret_seed": get_secret('/iam/automated-test/iam_test_at_mozilla.com_seed')
         },
         "passwordless":{
           "email": get_secret('/iam/automated-test/auth0_test_user_6d576ce8-07d7-11e7-aa80-74d435b2b680_at_restmail.net')
@@ -28,7 +28,7 @@ def dump_secrets():
         "github": {
           "username": 'moz.parsys@gmail.com',
           "password": get_secret('/iam/automated-test/moz.parsys_at_gmail.com'),
-          "secret": get_secret('/iam/automated-test/moz.parsys_at_gmail.com_seed')
+          "secret_seed": get_secret('/iam/automated-test/moz.parsys_at_gmail.com_seed')
         },
         "google": {
           "email": 'test.parsys@gmail.com',
@@ -37,7 +37,7 @@ def dump_secrets():
         "fxa": {
             "email": 'moz.parsys@gmail.com',
             "password": get_secret('/iam/automated-test/moz.parsys_at_gmail.com'),
-            "secret": get_secret('/iam/automated-test/moz.parsys_at_gmail.com_seed')
+            "secret_seed": get_secret('/iam/automated-test/moz.parsys_at_gmail.com_seed')
         }
       }
     }

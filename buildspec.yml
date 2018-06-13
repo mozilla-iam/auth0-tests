@@ -6,6 +6,8 @@ phases:
       - echo Preparing to run the automated tests...
       - apt-get update -y
       - pip install tox
+      - pip install boto3
+      - python params2json.py
       - apt-get install firefox xvfb -y
       - Xvfb :10 -ac &
       - export DISPLAY=:10
@@ -13,7 +15,6 @@ phases:
       - tar -xvzf geckodriver-v0.20.0-linux64.tar.gz
       - chmod +x geckodriver
       - cp geckodriver /usr/local/bin/
-      - python params2json.py > variables.json
   build:
     commands:
       - echo Running the tests now...
