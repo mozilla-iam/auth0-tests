@@ -1,20 +1,26 @@
 {
   "users": {
     "ldap": {
-      "email": "",
-      "password": "",
-      "secret_seed" : ""
+      "email": "parsys_test@mozilla.com",
+      "password": "eyJ0eXAiOiJKV1QiLCJhbGciO",
+      "secret_seed" : "ZI7IC4DTREUGXZUH7KQ4LC3GNC4X5LJNG7BMXNCU7VKNY4FD"
     },
     "passwordless":{
-      "email": ""
+      "email": "auth0_test_user_6d576ce8-07d7-11e7-aa80-74d435b2b680@restmail.net"
     },
     "github": {
-      "username": "",
-      "password": ""
+      "username": "moz.parsys@gmail.com",
+      "password": "fGSirfY6NG6U39uCR8qbXW6CXF",
+      "secret_seed": "7u3kxerpk3lsbw7o"
     },
     "google": {
-      "email": "",
-      "password": ""
+      "email": "parsmoz1@gmail.com",
+      "password": "fGSirfY6NG6U39uCR8qbXW6CXF"
+    },
+    "fxa": {
+      "email": "parsystest.user@gmail.com",
+      "password": "Mozilla1@",
+      "secret_seed": "OZCGI5TVINYHCNLEFNQUQNDVNB5GMNSO"
     }
   }
 }

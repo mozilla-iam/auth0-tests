@@ -1,0 +1,26 @@
+{
+  "users": {
+    "ldap": {
+      "email": "",
+      "password": "",
+      "secret_seed" : ""
+    },
+    "passwordless":{
+      "email": ""
+    },
+    "github": {
+      "username": "",
+      "password": "",
+      "secret_seed": ""
+    },
+    "google": {
+      "email": "",
+      "password": ""
+    },
+    "fxa": {
+      "email": "",
+      "password": "",
+      "secret_seed": ""
+    }
+  }
+}
